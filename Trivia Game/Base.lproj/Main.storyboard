@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,98 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igh-Q1-QxR" userLabel="Question Text">
+                                <string key="text">Questions Go Here Questions Go Here Questions Go Here Questions Go Here Questions Go Here Questions Go Here Questions Go Here Questions Go Here</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdc-In-0tH" userLabel="Play Again Button">
+                                <color key="backgroundColor" red="0.29316562105393673" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Play Again"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWl-OT-Cde" userLabel="A Button">
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.28905699102883942" blue="0.14854865398977452" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ItR-tC-d0O"/>
+                                    <constraint firstAttribute="width" constant="140" id="mM8-3V-00S"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="A Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTA-5E-fxh" userLabel="B Button">
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.28905699102883942" blue="0.14854865398977452" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="B Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFc-C6-aMk" userLabel="C Button">
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.28905699102883942" blue="0.14854865398977452" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VxI-vK-OUP"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="C Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ye-b1-IlH" userLabel="D Button">
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.28905699102883942" blue="0.14854865398977452" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="D Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utw-dS-pha">
+                                <color key="backgroundColor" red="0.075109072029590607" green="0.00089523196220397949" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRi-pf-ueV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PFc-C6-aMk" firstAttribute="top" secondItem="1ye-b1-IlH" secondAttribute="top" id="3nt-o5-wc4"/>
+                            <constraint firstItem="sWl-OT-Cde" firstAttribute="baseline" secondItem="rTA-5E-fxh" secondAttribute="firstBaseline" id="3pi-Hl-diW"/>
+                            <constraint firstItem="igh-Q1-QxR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-177" id="45R-he-Q59"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="utw-dS-pha" secondAttribute="trailing" constant="86" id="Cbe-3V-BVn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qdc-In-0tH" secondAttribute="bottom" constant="8" id="DBc-Zo-0C7"/>
+                            <constraint firstItem="utw-dS-pha" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="87" id="E2S-1y-EYJ"/>
+                            <constraint firstItem="sWl-OT-Cde" firstAttribute="leading" secondItem="PFc-C6-aMk" secondAttribute="leading" id="Ejw-3n-dah"/>
+                            <constraint firstItem="sWl-OT-Cde" firstAttribute="trailing" secondItem="PFc-C6-aMk" secondAttribute="trailing" id="H12-js-Hlq"/>
+                            <constraint firstItem="qdc-In-0tH" firstAttribute="top" secondItem="PFc-C6-aMk" secondAttribute="bottom" constant="96" id="HDP-vw-ioJ"/>
+                            <constraint firstItem="utw-dS-pha" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="248" id="KRf-Hy-qaO"/>
+                            <constraint firstItem="rTA-5E-fxh" firstAttribute="leading" secondItem="1ye-b1-IlH" secondAttribute="leading" id="PFl-DO-kW8"/>
+                            <constraint firstItem="igh-Q1-QxR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xu6-Wm-BU8"/>
+                            <constraint firstItem="rTA-5E-fxh" firstAttribute="leading" secondItem="sWl-OT-Cde" secondAttribute="trailing" constant="26" id="Zut-Pr-Cyh"/>
+                            <constraint firstItem="qdc-In-0tH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="87" id="aDD-lT-2vM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qdc-In-0tH" secondAttribute="trailing" constant="86" id="aPc-1T-9Xl"/>
+                            <constraint firstItem="rTA-5E-fxh" firstAttribute="trailing" secondItem="1ye-b1-IlH" secondAttribute="trailing" id="b6A-13-bQ1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="utw-dS-pha" secondAttribute="bottom" constant="332" id="c4g-Sc-VHg"/>
+                            <constraint firstItem="sWl-OT-Cde" firstAttribute="top" secondItem="rTA-5E-fxh" secondAttribute="top" id="iJQ-Pm-Yoa"/>
+                            <constraint firstItem="rTA-5E-fxh" firstAttribute="baseline" secondItem="sWl-OT-Cde" secondAttribute="firstBaseline" id="jgX-Ny-ijz"/>
+                            <constraint firstItem="igh-Q1-QxR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-177" id="kd5-aJ-NXQ"/>
+                            <constraint firstItem="sWl-OT-Cde" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="lTH-nF-sL4"/>
+                            <constraint firstItem="PFc-C6-aMk" firstAttribute="baseline" secondItem="1ye-b1-IlH" secondAttribute="firstBaseline" id="pAC-dN-6n8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rTA-5E-fxh" secondAttribute="trailing" constant="18" id="rxc-66-UBF"/>
+                            <constraint firstItem="PFc-C6-aMk" firstAttribute="top" secondItem="sWl-OT-Cde" secondAttribute="bottom" constant="27" id="vXI-Z6-Vc3"/>
+                            <constraint firstItem="igh-Q1-QxR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xmN-St-Kaz"/>
+                            <constraint firstItem="1ye-b1-IlH" firstAttribute="baseline" secondItem="PFc-C6-aMk" secondAttribute="firstBaseline" id="zqj-yJ-DPt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AButton" destination="sWl-OT-Cde" id="tdy-r5-sO1"/>
+                        <outlet property="BButton" destination="rTA-5E-fxh" id="Mwr-9C-S1r"/>
+                        <outlet property="CButton" destination="PFc-C6-aMk" id="YGb-eg-A58"/>
+                        <outlet property="DButton" destination="1ye-b1-IlH" id="x4y-BR-Xjc"/>
+                        <outlet property="PlayAgain" destination="qdc-In-0tH" id="ku6-bV-ri9"/>
+                        <outlet property="PlayButton" destination="utw-dS-pha" id="7kO-BR-c75"/>
+                        <outlet property="Question" destination="igh-Q1-QxR" id="D8o-iD-HOi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>
